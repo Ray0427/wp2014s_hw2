@@ -2,76 +2,131 @@
 <head>
   <meta charset="utf-8" />
   <title>林柏辰的個人網站 &mdash; Ray's website</title>
+  
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/text.css" />
   <link rel="stylesheet" href="css/960.css" />
   <link rel="stylesheet" href="css/demo.css" />
+  
 </head>
 <body>
   <header>
     <a href="https://www.facebook.com/baichen.lin">林柏辰's facebook </a>
+    <a href="#Education">Education</a>
+    <a href="#Skill">Skill</a>
+    <a href="#Hobbies">Hobbies</a>
+    <a href="#Contact Form">Contact Form</a>
+
   </header>
   <div class="container_12">
-    <img src="img/keep coding.jpg">     
+    <img class="kc" src="img/keep coding.jpg">     
     <div class="grid_12">
       <h2>林柏辰 Ray</h2>
       <p>
-      
+        Hello! My name is Ray. <br>
+        I was interesting in computer when I was a child.<br>
+        So,I decided to study in <em>Computer Science</em><br>
 
       </p>
     </div>
-    
-    <div class="clear"></div>
-    <div class="grid_2">
-      <p>
-        Education
-      </p>
-    </div>
-    <!-- end .grid_2 -->
-    <div class="grid_10">
-      <p>
-        National Chengchi University
-      </p>
-      <p>
-        Major:Computer Science
-      </p>
-    </div>
-    <!-- end .grid_10 -->
-    <div class="clear"></div>
-    <div class="grid_2">
-      <p>
-        Skill
-      </p>
-    </div>
-    <!-- end .grid_2 -->
-    <div class="grid_10">
-      <p>
-        Computer Skill:
-      </p>
-      <ul>
-        <li>Word</li>
-        <li>Excel</li>
-        <li> C Programming</li>
-      </ul>
-    </div>
-    <!-- end .grid_10 -->
-    <div class="clear"></div>
-    <div class="grid_2">
-      <p>
-        Hobbies
-      </p>
-    </div>
-    <!-- end .grid_2 -->
-    <div class="grid_10">
-      <ul>
-        <li>Listening Music </li>
-        <li> Playing Piano</li>
-      </ul>
-
-    </div>
-    <!-- end .grid_10 -->
-    <div class="clear"></div>
   </div>
   <!-- end .container_16 -->
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="grid_3">
+      <p><a name="Education">
+        Education
+      </a>
+    </p>
+  </div>
+  <!-- end .grid_3 -->
+  <div class="grid_9">
+    <ul>National Chengchi University
+      <li>Major : Computer Science</li>
+    </ul>
+  </div>
+  <!-- end .grid_9 -->
+  <div class="clear"></div>
+  <div class="grid_3">
+    <p><a name="Skill">
+      Skill
+    </a>
+  </p>
+</div>
+<!-- end .grid_3 -->
+<div class="grid_9">
+
+  <ul>Computer Skill :      
+    <li>Word <img src="img/word.png"></li>
+    <li>Excel <img src="img/excel.png"></li>
+    <li> C Programming </li>
+  </ul>
+
+</div>
+<!-- end .grid_9 -->
+<div class="clear"></div>
+<div class="grid_3">
+  <p><a name="Hobbies">
+    Hobbies
+  </a>
+</p>
+</div>
+<!-- end .grid_3 -->
+<div class="grid_9">
+  <ul>
+    <li>Listening Music </li>
+    <li> Playing Piano</li>
+  </ul>
+
+</div>
+<!-- end .grid_9 -->
+<div class="clear"></div>
+</div>
+<!-- end .container_16 -->
+<div class="container_12">
+<div class="grid_3">
+  <h1>Contact Form</h1>
+</div>
+  <div class="grid_9">
+    <a name="Contact Form"></a>
+    <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDZ3dGNNLVFBTjR4bktTNGhQVEFfa3c6MA&amp;ifq" method="POST">
+      <p>
+        <label for="id">hidden_id</label><br>
+        <input type="text" name="entry.0.single" value="your_id">
+      </p>
+      <p><label for="Gender">Gender</label><br>
+        <input type="radio" name="entry.1.group" value="Boy">Boy<br>
+        <input type="radio" name="entry.1.group" value="Girl">Girl
+      </p>
+      <p><label for="avorite Foods">Favorite Foods</label><br>
+        <input type="checkbox" name="entry.2.group" value="Apple">Apple<br>
+        <input type="checkbox" name="entry.2.group" value="Banana">Banana<br>
+        <input type="checkbox" name="entry.2.group" value="Lemon">Lemon<br>
+        <input type="checkbox" name="entry.2.group" value="Watermelon">Watermelon
+      </p>
+      <p>
+        <select name="entry.3.single">
+          <option>single</option> 
+          <option>dating</option>
+          <option>married</option>
+          <option>hard to explain</option>
+        </select>
+      </p>
+      <p>Email<br>
+        <input type="email" name="entry.4.single">
+      </p>
+      <p>
+        <label for="Comments">Comments</label><br>
+        <textarea name="entry.5.single" cols="30" rows="5"></textarea>
+      </p>
+      <p>
+      <input type="submit" value="提交">
+      </p>
+    </form>
+  </div>
+</div>
+<footer>
+  <p>Ray@2014</p>
+</footer>
 </body>
 </html>
